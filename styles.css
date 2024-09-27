@@ -1,0 +1,91 @@
+* {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+}
+.left,
+.right {
+  /* border: 1px solid; */
+  padding: 10px;
+}
+
+.left {
+  background-color: #fafafb;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 20px;
+}
+
+.title {
+  background-color: #4ab2f1;
+  color: #f5f5f5;
+  padding: 5px 10px;
+}
+
+.select-full-width {
+  width: 100%;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.estimate-shopping label {
+  display: block;
+}
+
+.input-grid div {
+  /* border: 1px solid; */
+}
+
+select,
+input,
+button {
+  height: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: auto;
+}
+.method {
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    display: block;
+  }
+}
+
+button {
+  background: #4ab2f1;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  height: 30px;
+}
+.coupon {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: 1px solid;
+}
+.coupon input {
+  border: none;
+  outline: none;
+  margin-bottom: unset;
+}
+.coupon button {
+  margin-bottom: unset;
+}

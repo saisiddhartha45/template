@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2>Checkout</h2>
+    </header>
+    <main class="main-container">
+      <section class="left">
+        <div class="billing-address">
+          <h3 class="title">Billing Address</h3>
+          <input type="checkbox" />
+          <b>Ship to the same address</b>
+          <p>
+            Select a billing address from your address or enter a new address.
+          </p>
+          <div class="shipping-address-inputs">
+            <select class="select select-full-width">
+              <option selected value="New Address">New Address</option>
+            </select>
+
+            <div class="input-grid">
+              <input type="text" placeholder="First name" />
+              <input type="text" placeholder="Last name" />
+              <input type="email" placeholder="email" />
+              <select>
+                <option value="selectCountry">Select Country</option>
+              </select>
+              <select>
+                <option value="State">Select State</option>
+              </select>
+              <input type="text" placeholder="City" />
+              <input type="text" placeholder="Zip / postal code" />
+              <input type="tel" placeholder="Phone number" />
+            </div>
+            <select class="select-full-width">
+              <option value="address">Address 1</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="shipping-address">
+          <h3 class="title">Shipping Address</h3>
+          <p>
+            Select a shipping address form your addresss book or enter a new
+            address.
+          </p>
+
+          <div>
+            <select class="select-full-width">
+              <option selected value="New Address">New Address</option>
+            </select>
+            <div class="input-grid">
+              <input type="text" placeholder="Zip / postal code" />
+              <input type="tel" placeholder="Phone number" />
+            </div>
+          </div>
+        </div>
+        <div class="estimate-shopping">
+          <h3 class="title">Estimate Shipping</h3>
+          <label for="countryId">Country Id:</label>
+          <select class="select-full-width">
+            <option value="country">Select country</option>
+          </select>
+          <label for="state">StateProvinceId:</label>
+          <select class="select-full-width">
+            <option value="state">other</option>
+          </select>
+          <label for="zipPostal">Zip</label>
+          <input type="text" name="zipPostal" class="select-full-width" />
+        </div>
+        <div>
+          <button>ESTIMATE SHIPPING</button>
+        </div>
+      </section>
+      <section class="right">
+        <div class="shipping-method">
+          <h3 class="title">Shipping Method</h3>
+          <div class="input-grid">
+            <div class="method">
+              <input type="radio" name="radio" id="" />
+              <label for="ground">Ground</label>
+              <p>Shipping by land transport</p>
+            </div>
+            <div class="method">
+              <input type="radio" name="radio" id="" />
+              <label for="next-day-air">Next Day Air</label>
+              <p>The one day air shipping</p>
+            </div>
+            <div class="method">
+              <input type="radio" name="radio" id="" />
+              <label for="next-day-air">Next Day Air</label>
+              <p>The Two day air shipping</p>
+            </div>
+          </div>
+        </div>
+        <div class="payment-method">
+          <h3 class="title">Payment Method</h3>
+          <div class="input-grid">
+            <div class="method">
+              <input type="radio" name="payment-method" id="" />
+              <label for="check">Check / Money Order</label>
+              <p>Pay by cheque or money Order</p>
+            </div>
+            <div class="method">
+              <input type="radio" name="payment-method" id="" />
+              <label for="credit-card">Credit Card</label>
+              <p>Pay by credit / debit card</p>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              Mail Personal or Business Check, Cashier's Check or money order
+              to:
+            </p>
+          </div>
+        </div>
+        <div class="discount-gift-codes input-grid">
+          <div class="discount-code">
+            <h3 class="title">Discount code</h3>
+            <p>Enter your coupon here</p>
+            <div class="coupon">
+              <input type="text" /> <button>APPLY COUPON</button>
+            </div>
+          </div>
+          <div class="gift-cards">
+            <h3 class="title">Gift Cards</h3>
+            <p>Enter gift card code</p>
+            <div class="coupon">
+              <input type="text" /> <button>ADD GIFT CARD</button>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-order-total input-grid">
+          <div class="checkout-attribute">
+            <h3 class="title">Checkout Attribute</h3>
+
+            <b>Gift wrapping</b>
+            <select name="" id="">
+              <option value="no" selected>No</option>
+              <option value="yes">Yes</option>
+            </select>
+          </div>
+          <div class="order-total">
+            <h3 class="title">Order Total</h3>
+            <table>
+              <tr>
+                <td>Sub-total:</td>
+                <td>490.00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
